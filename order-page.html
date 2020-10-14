@@ -1,0 +1,60 @@
+<!-- THIS HTML FILE BUILDS THE WEB PAGE FOR MOM'S CREAMY CREATIONS
+     Created by: Nica Ang   Date: 10/14/2020   Last Updated: 10/14/20 -->  
+
+<!DOCTYPE html>
+<html lang="en">
+       
+<!-- HEAD - META -->
+<head>
+    <title>Mom's Creamy Creations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a serverless website.">
+</head>
+     
+<!-- HEADER -->
+<header>
+    <h1>Mom's Creamy Creations</h1>
+    <nav role="navigation" aria-label="main-menu">
+        <ul class="navbar">
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#order-form">PLACE ORDER</a></li>
+            <li><a href="/how-to-order.html">HOW TO ORDER</a></li>
+            <li><a href="/contact-us.html">CONTACT US</a></li>
+            <li><a href="/social">SOCIAL</a></li>
+        </ul>
+    </nav>
+</header>
+     
+<body> 
+
+<!-- STORE HOURS -->
+    <h2>WE ARE OPEN NOW!</h2>
+    <time datetime="2020-10-14">Oct 14, 2020</time>
+       
+<!-- MENU -->
+    <h2 id='menu'>MENU</h2>
+    <figure>
+        <img src="bread.jpg" alt="bread" width ='300'> 
+        <figcaption> BREAD </figcaption>
+    </figure>
+       
+<!-- ORDER FORM -->  
+    <form>
+        <h2 id="order-form">ORDER FORM</h2>
+        <h3><i>Please fill-out the order form below to place your order.</i></h3>
+        <label><h3 id= "name"><b>Name: </b></h3> <input name="cust-name"></label>
+        <label><h3 id= "address"><b>Address: </b></h3> <input name="cust-add"></label>
+        <label><h3 id= "number"><b>Contact No.: </b></h3> <input name="cust-num"></label>
+        <h3 id= "order"><b>Orders: </b></h3>
+        <ul>
+            <label><b><i><li>Ube Cheese pandesal - </li></i></b> <input name="ucp-num"></label>
+            <label><b><i><li>Milk bread - </li></i></b> <input name="mb-num"></label>
+            <label><b><i><li>Cookies - </li></i></b> <input name="ckies-num"></label></label>
+        </ul>
+        <!-- TRIGGER API GATEWAY -->
+        <button><h3><b>PLACE ORDER</b></h3></button>
+    </form>
+       
+</body>
+</html>
