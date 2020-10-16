@@ -1,60 +1,89 @@
 <!-- THIS HTML FILE BUILDS THE WEB PAGE FOR MOM'S CREAMY CREATIONS
-     Created by: Nica Ang   Date: 10/14/2020   Last Updated: 10/14/20 -->  
+     Created by: Nica Ang   Date: 10/14/2020   Last Updated: 10/14/20 -->
 
 <!DOCTYPE html>
 <html lang="en">
-       
+
 <!-- HEAD - META -->
 <head>
     <title>Mom's Creamy Creations</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a serverless website.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-     
+
+<body>
+
 <!-- HEADER -->
 <header>
-    <h1>Mom's Creamy Creations</h1>
-    <nav role="navigation" aria-label="main-menu">
-        <ul class="navbar">
-            <li><a href="#menu">MENU</a></li>
-            <li><a href="#order-form">PLACE ORDER</a></li>
-            <li><a href="/how-to-order.html">HOW TO ORDER</a></li>
-            <li><a href="/contact-us.html">CONTACT US</a></li>
-            <li><a href="/social">SOCIAL</a></li>
-        </ul>
+    <div><img src="images/logo.png" alt="logo" width="350"></div>
+    <nav class="navbar" role="navigation" aria-label="main-menu">
+      <a href="#menu">MENU</a>
+      <a href="#order-form">PLACE MY ORDER</a>
+      <a href="verify-order.html">VERIFY ORDER</a>
+      <a href="how-to-order.html">HOW TO ORDER</a>
+      <a href="feedback.html">SUBMIT A FEEDBACK</a>
+      <a href="contact-us.html">CONTACT US</a>
+      <a href="social.html">SOCIAL</a>
     </nav>
 </header>
-     
-<body> 
 
-<!-- STORE HOURS -->
-    <h2>WE ARE OPEN NOW!</h2>
-    <time datetime="2020-10-14">Oct 14, 2020</time>
-       
+<!-- DASHBOARD-->
+<section class="dashboard">
+  <div class="middle">
+    <h2>DASHBOARD</h2>
+    <strong>WE ARE OPEN NOW!<br></strong>
+    <time datetime="2020-10-14">Oct 14, 2020<br></time>
+    <strong>ANNOUNCEMENT: Free delivery on Aug 1, 2020</strong>
+  </div>
+</section>
+
 <!-- MENU -->
-    <h2 id='menu'>MENU</h2>
+<section id="menu">
+  <div class="middle">
+    <h2>CREATIONS</h2>
+    <div class="figures">
     <figure>
-        <img src="bread.jpg" alt="bread" width ='300'> 
-        <figcaption> BREAD </figcaption>
+        <img src="images/6.jpg" alt="milk bread nutella"><br>
+        <figcaption>MILK BREAD (Nutella)</figcaption>
     </figure>
-       
-<!-- ORDER FORM -->  
-    <form>
-        <h2 id="order-form">ORDER FORM</h2>
-        <h3><i>Please fill-out the order form below to place your order.</i></h3>
-        <label><h3 id= "name"><b>Name: </b></h3> <input name="cust-name" required></label>
-        <label><h3 id= "address"><b>Address: </b></h3> <input name="cust-add" required></label>
-        <label><h3 id= "number"><b>Contact No.: </b></h3> <input name="cust-num" required></label>
-        <h3 id= "order"><b>Orders: </b></h3>
-        <ul>
-            <label><b><i><li>Ube Cheese pandesal - </li></i></b> <input name="ucp-num" required></label>
-            <label><b><i><li>Milk bread - </li></i></b> <input name="mb-num" required></label>
-            <label><b><i><li>Cookies - </li></i></b> <input name="ckies-num" required></label></label>
+    <figure>
+        <img src="images/7.jpg" alt="milk bread peanut butter">
+        <figcaption> MILK BREAD (Peanut Butter) </figcaption>
+    </figure>
+    <figure>
+        <img src="images/8.jpg" alt="milk bread cheese">
+        <figcaption> MILK BREAD (Cheese) </figcaption>
+    </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ORDER FORM -->
+<form id="order-form">
+  <div class="middle">
+        <h2>ORDER FORM</h2>
+        <h3><i>We'll use these details for your delivery booking! </i></h3>
+        <label><b id="name">Name: </b> <input name="cust-name" required></label><br>
+        <label><b id= "address">Delivery Address:</b> <input name="cust-add" required></label><br>
+        <label><b id= "contact-no">Contact No.: </b><input name="cust-num" required placeholder="09123456789"></label><br>
+        <h4 id= "order"><b>Orders: </b></h4>
+        <ul class="prod-names">
+            <label><li><b>Ube Cheese pandesal - </b> <input name="ucp-num" type="number" required></li></label>
+            <label><li><b>Milk bread - </b> <input name="mb-num" type="number" required></li></label>
+            <label><li><b>Cookies - </b> <input name="ckies-num" type="number" required></li></label>
         </ul>
+      </form>
+      <form class="order-form-agree">
+        <div><label><input name="book-my-own" type='checkbox'>I would like to book my own delivery.</label></div>
+        <div><label><input name="dday-agreed" type='checkbox' required>I understand delivery day is tomorrow.</label></div>
+
         <!-- TRIGGER API GATEWAY -->
         <button><h3><b>PLACE ORDER</b></h3></button>
-    </form>
-       
+  </div>
+</form>
+
 </body>
 </html>

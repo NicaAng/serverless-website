@@ -1,0 +1,77 @@
+/* This is for the retina display
+-----------------------------------------------*/
+img{
+    width: 300px;
+}
+
+/* Global Styles
+-----------------------------------------------*/
+h2{
+  color:#D81159;
+}
+
+body{
+  background: floralwhite;
+  margin:0;
+  padding:0;
+}
+
+.middle{
+  background:#FFF5EE;
+  width:780px;
+  margin:4px auto;
+}
+
+/* Logo
+-----------------------------------------------*/
+header img{
+  display: block;
+  margin: 0 auto;
+}
+header div{
+  background:mistyrose;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Navigation bar
+-----------------------------------------------*/
+nav{
+  width:800px;
+  margin:20px auto;
+}
+.navbar a{
+  color:#EBF5EE;
+  background:#031926;
+  padding: 8px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color:#468189;
+  background:rgba(3, 25, 38, 10%);
+}
+
+/* Dashboard
+-----------------------------------------------*/
+
+/* Menu
+-----------------------------------------------*/
+.figures figure {
+  display:inline-block;
+  margin:0 auto;
+}
+.figures img {
+  width: 250px;
+  margin:8px auto;
+}
+
+/* Order Form
+-----------------------------------------------*/
+.order-form-agree div{
+  width:500px;
+}
+button{
+  margin-top:18px;
+}
