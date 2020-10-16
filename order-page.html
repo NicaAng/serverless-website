@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a serverless website.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,25 +18,26 @@
 
 <!-- HEADER -->
 <header>
-    <div><img src="images/logo.png" alt="logo" width="350"></div>
-    <nav class="navbar" role="navigation" aria-label="main-menu">
-      <a href="#menu">MENU</a>
-      <a href="#order-form">PLACE MY ORDER</a>
-      <a href="verify-order.html">VERIFY ORDER</a>
-      <a href="how-to-order.html">HOW TO ORDER</a>
-      <a href="feedback.html">SUBMIT A FEEDBACK</a>
-      <a href="contact-us.html">CONTACT US</a>
-      <a href="social.html">SOCIAL</a>
-    </nav>
+    <div class="bg">
+      <img src="images/logo.png" alt="logo" width="350"><br>
+      <nav class="navbar" role="navigation" aria-label="main-menu">
+        <a href="#menu">MENU</a>
+        <a href="how-to-order.html">HOW TO ORDER</a>
+        <a href="#order-form">PLACE MY ORDER</a>
+        <a href="verify-order.html">VERIFY ORDER</a>
+        <a href="feedback.html">SUBMIT A FEEDBACK</a>
+        <a href="contact-us.html">CONTACT US</a>
+    </div>
 </header>
 
 <!-- DASHBOARD-->
 <section class="dashboard">
   <div class="middle">
     <h2>DASHBOARD</h2>
-    <strong>WE ARE OPEN NOW!<br></strong>
-    <time datetime="2020-10-14">Oct 14, 2020<br></time>
-    <strong>ANNOUNCEMENT: Free delivery on Aug 1, 2020</strong>
+    <h3>WE ARE OPEN NOW!</h3>
+    <p><time datetime="2020-10-14">Oct 14, 2020</time></p>
+    <h3>ANNOUNCEMENT: </h3>
+    <p>Free delivery on Aug 1, 2020</p>
   </div>
 </section>
 
@@ -62,28 +64,30 @@
 
 
 <!-- ORDER FORM -->
-<form id="order-form">
+<section class="order-form" id="order-form">
   <div class="middle">
+    <form>
         <h2>ORDER FORM</h2>
-        <h3><i>We'll use these details for your delivery booking! </i></h3>
-        <label><b id="name">Name: </b> <input name="cust-name" required></label><br>
-        <label><b id= "address">Delivery Address:</b> <input name="cust-add" required></label><br>
-        <label><b id= "contact-no">Contact No.: </b><input name="cust-num" required placeholder="09123456789"></label><br>
+        <h3>We'll use these details for your delivery booking!</h3>
+        <label id="name">Name: <input name="cust-name" required></label><br>
+        <label id= "address">Delivery Address: <input name="cust-add" required></label><br>
+        <label id= "contact-no">Contact No.: <input name="cust-num" required placeholder="09123456789"></label><br>
         <h4 id= "order"><b>Orders: </b></h4>
         <ul class="prod-names">
-            <label><li><b>Ube Cheese pandesal - </b> <input name="ucp-num" type="number" required></li></label>
-            <label><li><b>Milk bread - </b> <input name="mb-num" type="number" required></li></label>
-            <label><li><b>Cookies - </b> <input name="ckies-num" type="number" required></li></label>
+            <label><li>Ube Cheese pandesal - <input name="ucp-num" type="number" required></li></label>
+            <label><li>Milk bread - <input name="mb-num" type="number" required></li></label>
+            <label><li>Cookies - <input name="ckies-num" type="number" required></li></label>
         </ul>
-      </form>
-      <form class="order-form-agree">
+      <div class="order-form-agree">
         <div><label><input name="book-my-own" type='checkbox'>I would like to book my own delivery.</label></div>
         <div><label><input name="dday-agreed" type='checkbox' required>I understand delivery day is tomorrow.</label></div>
 
         <!-- TRIGGER API GATEWAY -->
-        <button><h3><b>PLACE ORDER</b></h3></button>
+        <button>PLACE ORDER</button>
+      </div>
+    </form>
   </div>
-</form>
+</section>
 
 </body>
 </html>

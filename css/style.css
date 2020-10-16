@@ -5,21 +5,30 @@ img{
 }
 
 /* Global Styles
------------------------------------------------*/
-h2{
   color:#D81159;
+  color:#5B5F97
+-----------------------------------------------*/
+h2 {
+  color:#031926;
+  font-family: 'Roboto Slab', serif;
+  font-weight:700;
+}
+
+.navbar a{
+  color:#031926;
+  font-family: 'Roboto Slab', serif;
 }
 
 body{
   background: floralwhite;
   margin:0;
   padding:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .middle{
-  background:#FFF5EE;
-  width:780px;
-  margin:4px auto;
+  width:750px;
+  margin:40px auto;
 }
 
 /* Logo
@@ -28,16 +37,18 @@ header img{
   display: block;
   margin: 0 auto;
 }
-header div{
-  background:mistyrose;
+header .bg{
+  background:#FAF0E6;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
 /* Navigation bar
+background:#031926
+color:#468189
 -----------------------------------------------*/
 nav{
-  width:800px;
+  width:765px;
   margin:20px auto;
 }
 .navbar a{
@@ -47,14 +58,15 @@ nav{
   border-radius: 10px;
   text-decoration: none;
 }
-
 .navbar a:hover{
-  color:#468189;
-  background:rgba(3, 25, 38, 10%);
+  background:rgba(3, 25, 38, 60%);
 }
 
 /* Dashboard
 -----------------------------------------------*/
+.dashboard p{
+  font-weight:400;
+}
 
 /* Menu
 -----------------------------------------------*/
@@ -66,9 +78,18 @@ nav{
   width: 250px;
   margin:8px auto;
 }
+.figures figcaption{
+  font-weight:600;
+}
 
 /* Order Form
 -----------------------------------------------*/
+.order-form h3{
+  font-style:italic;
+}
+.order-form label{
+  font-weight:700;
+}
 .order-form-agree div{
   width:500px;
 }
