@@ -1,22 +1,25 @@
-/* This is for the retina display
+/* This is the stylesheet for the serverless
+   website designed for Mom's Creamy.
 -----------------------------------------------*/
-img{
-    width: 300px;
-}
 
 /* Global Styles
-  color:#D81159;
-  color:#5B5F97
 -----------------------------------------------*/
+h1{
+  text-align: center;
+}
 h2 {
-  color:#031926;
-  font-family: 'Roboto Slab', serif;
   font-weight:700;
+  text-align: center;
+  margin:0;
 }
 
-.navbar a{
+h2, .navbar a{
   color:#031926;
   font-family: 'Roboto Slab', serif;
+}
+h4{
+  margin-top: 5px;
+  text-align: center;
 }
 
 body{
@@ -27,29 +30,30 @@ body{
 }
 
 .middle{
-  width:750px;
+  width:80%;
   margin:40px auto;
 }
 
 /* Logo
 -----------------------------------------------*/
-header img{
-  display: block;
-  margin: 0 auto;
-}
 header .bg{
   background:#FAF0E6;
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 20px;
 }
+header img{
+  margin: 6px auto 20px;
+}
 
 /* Navigation bar
-background:#031926
-color:#468189
 -----------------------------------------------*/
-nav{
-  width:765px;
-  margin:20px auto;
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .navbar a{
   color:#EBF5EE;
@@ -57,6 +61,7 @@ nav{
   padding: 8px;
   border-radius: 10px;
   text-decoration: none;
+  margin: 2px;
 }
 .navbar a:hover{
   background:rgba(3, 25, 38, 60%);
@@ -64,35 +69,42 @@ nav{
 
 /* Dashboard
 -----------------------------------------------*/
-.dashboard p{
-  font-weight:400;
-}
+
 
 /* Menu
 -----------------------------------------------*/
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 .figures figure {
-  display:inline-block;
-  margin:0 auto;
+  margin:0 20px 20px;
 }
 .figures img {
-  width: 250px;
-  margin:8px auto;
+  width: 200px;
 }
 .figures figcaption{
-  font-weight:600;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Order Form
 -----------------------------------------------*/
-.order-form h3{
-  font-style:italic;
+.order-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.order-form label{
-  font-weight:700;
+.order-form-item{
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 20px;
 }
-.order-form-agree div{
-  width:500px;
+div button{
+  display: flex;
 }
 button{
-  margin-top:18px;
+  margin: 20px auto 0;
 }

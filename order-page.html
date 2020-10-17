@@ -8,9 +8,9 @@
 <head>
     <title>Mom's Creamy Creations</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <meta name="description" content="This is a serverless website.">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,14 +19,14 @@
 <!-- HEADER -->
 <header>
     <div class="bg">
-      <img src="images/logo.png" alt="logo" width="350"><br>
+      <img src="images/logo.png" alt="logo" width="350">
       <nav class="navbar" role="navigation" aria-label="main-menu">
-        <a href="#menu">MENU</a>
-        <a href="how-to-order.html">HOW TO ORDER</a>
-        <a href="#order-form">PLACE MY ORDER</a>
-        <a href="verify-order.html">VERIFY ORDER</a>
-        <a href="feedback.html">SUBMIT A FEEDBACK</a>
-        <a href="contact-us.html">CONTACT US</a>
+        <a href="#menu" style="white-space: nowrap;">MENU</a>
+        <a href="how-to-order.html" style="white-space: nowrap;">HOW TO ORDER</a>
+        <a href="#order-form" style="white-space: nowrap;">PLACE MY ORDER</a>
+        <a href="verify-order.html" style="white-space: nowrap;">VERIFY ORDER</a>
+        <a href="feedback.html" style="white-space: nowrap;">SUBMIT A FEEDBACK</a>
+        <a href="contact-us.html" style="white-space: nowrap;">CONTACT US</a>
     </div>
 </header>
 
@@ -34,10 +34,9 @@
 <section class="dashboard">
   <div class="middle">
     <h2>DASHBOARD</h2>
-    <h3>WE ARE OPEN NOW!</h3>
-    <p><time datetime="2020-10-14">Oct 14, 2020</time></p>
-    <h3>ANNOUNCEMENT: </h3>
-    <p>Free delivery on Aug 1, 2020</p>
+    <h4>This page is always updated. Please check back here if we are OPEN or CLOSE.<br>
+    You'll also see here if there are free delivery offerings.</h4>
+    <h1>WE ARE ACCEPTING ORDERS TODAY!</h1>
   </div>
 </section>
 
@@ -45,19 +44,20 @@
 <section id="menu">
   <div class="middle">
     <h2>CREATIONS</h2>
+    <h4>Indulge in some pastry greatness.</h4>
     <div class="figures">
-    <figure>
+    <div><figure>
         <img src="images/6.jpg" alt="milk bread nutella"><br>
         <figcaption>MILK BREAD (Nutella)</figcaption>
-    </figure>
-    <figure>
+    </figure></div>
+    <div><figure>
         <img src="images/7.jpg" alt="milk bread peanut butter">
         <figcaption> MILK BREAD (Peanut Butter) </figcaption>
-    </figure>
-    <figure>
+    </figure></div>
+    <div><figure>
         <img src="images/8.jpg" alt="milk bread cheese">
         <figcaption> MILK BREAD (Cheese) </figcaption>
-    </figure>
+    </figure></div>
     </div>
   </div>
 </section>
@@ -68,23 +68,21 @@
   <div class="middle">
     <form>
         <h2>ORDER FORM</h2>
-        <h3>We'll use these details for your delivery booking!</h3>
-        <label id="name">Name: <input name="cust-name" required></label><br>
-        <label id= "address">Delivery Address: <input name="cust-add" required></label><br>
-        <label id= "contact-no">Contact No.: <input name="cust-num" required placeholder="09123456789"></label><br>
-        <h4 id= "order"><b>Orders: </b></h4>
-        <ul class="prod-names">
+        <h4>We'll use these details for your delivery booking!</h4>
+        <div class="order-form-container"><div class="order-form-item">
+          <label id="name">Name: <input name="cust-name" required></label><br>
+          <label id= "address">Delivery Address: <input name="cust-add" required></label><br>
+          <label id= "contact-no">Contact No.: <input name="cust-num" required placeholder="09123456789"></label><br>
+          <p>ORDERS:</p>
+          <ul class="prod-names">
             <label><li>Ube Cheese pandesal - <input name="ucp-num" type="number" required></li></label>
             <label><li>Milk bread - <input name="mb-num" type="number" required></li></label>
             <label><li>Cookies - <input name="ckies-num" type="number" required></li></label>
-        </ul>
-      <div class="order-form-agree">
-        <div><label><input name="book-my-own" type='checkbox'>I would like to book my own delivery.</label></div>
-        <div><label><input name="dday-agreed" type='checkbox' required>I understand delivery day is tomorrow.</label></div>
-
-        <!-- TRIGGER API GATEWAY -->
-        <button>PLACE ORDER</button>
-      </div>
+          </ul>
+          <div><label><input name="book-my-own" type='checkbox'>I would like to book my own delivery.</label></div>
+          <div><label><input name="dday-agreed" type='checkbox' required>I understand delivery day is tomorrow.</label></div>
+          <div><button>PLACE ORDER</button></div>
+        </div></div>
     </form>
   </div>
 </section>
