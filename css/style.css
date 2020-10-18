@@ -16,7 +16,7 @@ h2, .navbar a{
   color:#031926;
   font-family: 'Roboto Slab', serif;
 }
-h4{
+h4, h5{
   margin-top: 5px;
   text-align: center;
 }
