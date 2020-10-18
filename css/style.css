@@ -12,7 +12,6 @@ h2 {
   text-align: center;
   margin:0;
 }
-
 h2, .navbar a{
   color:#031926;
   font-family: 'Roboto Slab', serif;
@@ -21,25 +20,39 @@ h4{
   margin-top: 5px;
   text-align: center;
 }
-
 body{
   background: floralwhite;
   margin:0;
   padding:0;
   font-family: 'Montserrat', sans-serif;
 }
-
 .middle{
   width:80%;
   margin:40px auto;
 }
 
+/* Flex Containers
+-----------------------------------------------*/
+.figures, .order-form-container, .navbar,
+.figures figure, .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figures, .navbar{
+  flex-wrap: wrap;
+}
+header .bg{
+  display: flex;
+  flex-direction: column;
+}
+.figures figure{
+  flex-direction: column;
+}
 /* Logo
 -----------------------------------------------*/
 header .bg{
   background:#FAF0E6;
-  display: flex;
-  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -49,12 +62,6 @@ header img{
 
 /* Navigation bar
 -----------------------------------------------*/
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 .navbar a{
   color:#EBF5EE;
   background:#031926;
@@ -73,14 +80,8 @@ header img{
 
 /* Menu
 -----------------------------------------------*/
-.figures {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.figures figure {
-  margin:0 20px 20px;
+.figures figure{
+  margin: 4px;
 }
 .figures img {
   width: 200px;
@@ -88,23 +89,16 @@ header img{
 .figures figcaption{
   font-weight: bold;
   text-align: center;
+  padding-top: 8px;
 }
 
 /* Order Form
 -----------------------------------------------*/
-.order-form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .order-form-item{
   background: #F5F5F5;
   border-radius: 20px;
   padding: 20px;
 }
-div button{
-  display: flex;
-}
-button{
-  margin: 20px auto 0;
+.button button{
+  margin-top: 20px;
 }
