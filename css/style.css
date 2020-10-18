@@ -4,7 +4,7 @@
 
 /* Global Styles
 -----------------------------------------------*/
-h1{
+h1, h3{
   text-align: center;
 }
 h2 {
@@ -20,6 +20,9 @@ h4, h5{
   margin-top: 5px;
   text-align: center;
 }
+h5{
+  font-style: italic;
+}
 body{
   background: floralwhite;
   margin:0;
@@ -34,7 +37,7 @@ body{
 /* Flex Containers
 -----------------------------------------------*/
 .figures, .order-form-container, .navbar,
-.figures figure, .button{
+.figures figure, .button, .how-to-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,16 +45,15 @@ body{
 .figures, .navbar{
   flex-wrap: wrap;
 }
-header .bg{
-  display: flex;
-  flex-direction: column;
-}
 .figures figure{
   flex-direction: column;
 }
+
 /* Logo
 -----------------------------------------------*/
 header .bg{
+  display: flex;
+  flex-direction: column;
   background:#FAF0E6;
   padding-top: 10px;
   padding-bottom: 20px;
