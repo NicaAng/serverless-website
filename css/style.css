@@ -81,9 +81,10 @@ header img{
 -----------------------------------------------*/
 .figures figure{
   margin: 4px;
+  padding-bottom: 15px;
 }
 .figures img {
-  width: 200px;
+  width: 250px;
 }
 .figures figcaption{
   font-weight: bold;
