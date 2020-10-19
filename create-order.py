@@ -7,11 +7,9 @@ def lambda_handler(event, context):
         if 'name' in key:
             CustName = key['name']
         if 'number' in key:
-            CustNum = key['number'] 
+            CustNum = key['number']
 
-
-
-
-## move contact details to S3-JSON file
+## move contact details to S3-JSON file (with lifecycle policies)
+## move order details to DynamoDB
 ## add and move orders to S3-JSON file
 ## upload S3-JSON file
