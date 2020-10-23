@@ -101,6 +101,15 @@ header img{
   border-radius: 20px;
   padding: 20px;
 }
+.order-form-item .name{
+  width:100%;
+}
+.order-form-item .prod-names input{
+  width:30%;
+}
+.order-form-item input:focus, select:focus{
+  border: 3px solid #555;
+}
 .button button{
   margin-top: 20px;
 }
