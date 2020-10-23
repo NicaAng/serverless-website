@@ -12,6 +12,7 @@
     <meta name="description" content="This is a serverless website.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="test.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(function() {
@@ -23,7 +24,7 @@
 
           $.ajax({
             type: "POST",
-            url:  "https://hfj1fbxs1f.execute-api.us-east-1.amazonaws.com/Testing/order",
+            url:  "https://x1ozvntyw4.execute-api.us-east-1.amazonaws.com/Testing/order",
             data: $form.serialize(),
             success: function(data) {
               alert(data);
@@ -63,7 +64,7 @@
     <div class="figures">
     <div><figure>
         <img src="images/6.jpg" alt="milk bread nutella">
-        <figcaption>MILK BREAD (Nutella)<br>6 pcs - Php 120</figcaption>
+        <figcaption> MILK BREAD (Nutella)<br>6 pcs - Php 110</figcaption>
     </figure></div>
     <div><figure>
         <img src="images/7.jpg" alt="milk bread peanut butter">
@@ -83,7 +84,7 @@
   <div class="middle container-form">
   <h2>PLACE MY ORDER</h2>
   <h4>We'll use these details for your delivery booking!</h4>
-    <form role="form" method="post" id="order_form" action="https://hfj1fbxs1f.execute-api.us-east-1.amazonaws.com/Testing/order">
+    <form role="form" method="post" id="order_form" action="https://x1ozvntyw4.execute-api.us-east-1.amazonaws.com/Testing/order">
         <div class="order-form-container"><div class="order-form-item">
           <label>Name: <br><input name="name" type="text" placeholder="FB or IG name" required></label><br>
 <!--        <label id= "address">Delivery Address: <br><input name="cust-add" required></label><br>
