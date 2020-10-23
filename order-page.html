@@ -23,7 +23,7 @@
 
           $.ajax({
             type: "POST",
-            url:  "https://x1ozvntyw4.execute-api.us-east-1.amazonaws.com/Testing/order",
+            url:  "https://hfj1fbxs1f.execute-api.us-east-1.amazonaws.com/Testing/order",
             data: $form.serialize(),
             success: function(data) {
               alert(data);
@@ -83,7 +83,7 @@
   <div class="middle container-form">
   <h2>PLACE MY ORDER</h2>
   <h4>We'll use these details for your delivery booking!</h4>
-    <form role="form" method="post" id="order_form" action="https://x1ozvntyw4.execute-api.us-east-1.amazonaws.com/Testing/order">
+    <form role="form" method="post" id="order_form" action="https://hfj1fbxs1f.execute-api.us-east-1.amazonaws.com/Testing/order">
         <div class="order-form-container"><div class="order-form-item">
           <label>Name: <br><input name="name" type="text" placeholder="FB or IG name" required></label><br>
 <!--        <label id= "address">Delivery Address: <br><input name="cust-add" required></label><br>
