@@ -4,7 +4,7 @@
 
 /* Global Styles
 -----------------------------------------------*/
-h1, h3{
+h1, h3, h6{
   text-align: center;
 }
 h2 {
@@ -101,15 +101,12 @@ header img{
   border-radius: 20px;
   padding: 20px;
 }
+.name{
+  width:100%;
+}
 .order-form-item .prod-names input{
-  width:50%;
+  width:80%;
 }
 .order-form-item input:focus, select:focus{
   border: 3px solid #555;
-}
-.warning{
-  text-align: center;
-}
-.button button{
-  margin-top: 20px;
 }

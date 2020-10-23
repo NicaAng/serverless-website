@@ -81,8 +81,8 @@
 <!-- ORDER FORM -->
 <section class="order-form">
   <div class="middle container-form">
-  <h2>PLACE MY ORDER</h2>
-  <h4>Choose the number of orders PER PACK and wait for your Reference Number.</h4>
+  <h2>ORDER FORM</h2>
+  <h4>Place the number of packs per creation and wait for your Reference Number.</h4>
     <form role="form" method="post" id="order_form" action="https://hfj1fbxs1f.execute-api.us-east-1.amazonaws.com/Testing/order">
         <div class="order-form-container"><div class="order-form-item">
           <label>Name: <br><input name="name" type="text" class="name" placeholder="FB or IG name" required></label><br>
@@ -93,15 +93,15 @@
             <label><li>Milk Bread: Peanut Butter<br><input name="mbp-num" type="number" value = 0 onkeypress="return event.charCode >= 48" min="0" max="5" required></li></label><br>
             <label><li>Milk Bread: Cheese<br><input name="mbc-num" type="number" value = 0 onkeypress="return event.charCode >= 48" min="0" max="5" required></li></label><br>
             <label><li>Cream Cheese Garlic Bread<br>
-              <select name="cc-garlic-pcs" id="cars">
-              <option value=0>0</option><option value=2>2 pcs</option><option value=4>4 pcs</option>
+              <select name="cc-garlic-pcs" id="cars"
+              <option value=0>0</option><option selected value=2>2 pcs per pack</option><option value=4>4 pcs per pack</option>
               </select>
               <input name="cc-num" type="number" value = 0 onkeypress="return event.charCode >= 48" min="0" max="5" required></li></label><br>
             <label><li>Dark Chocolate with Walnuts Cookies<br><input name="ckies-num" type="number" value = 0 onkeypress="return event.charCode >= 48" min="0" max="5" required></li></label><br>
           </ul>
           <div class="agree-btns"><label><input name="book-my-own" type='checkbox'>I would like to book my own delivery.</label></div>
           <div><label><input name="dday-agreed" type='checkbox' required>I understand delivery day is tomorrow.</label></div>
-          <h6 class="warning"><br>Please make sure details are correct.</h6>
+          <h6>Please make sure details are correct.</h6>
           <div class="button"><button name="place-order" type="submit">PLACE ORDER</button></div>
         </div></div>
     </form>
